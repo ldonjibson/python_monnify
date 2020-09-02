@@ -16,9 +16,13 @@ Quick start
 
 3. method includes 
 	> generateToken: Method generate Token to be used in the subsequent calls
+	
 	> createReserveAccount: Creates reserve accounts and returns value from monnify's API
+	
 	> createHashFromWebhook: Generate hash as described on monnify's documentation to compare with transactionsHash
 4. #=========== USAGE ==========
 	x = Monnify("apiKey", "clientSecretKey")
+	
 	print(x.generateToken())
+	
 	print(x.createReserveAccount())
