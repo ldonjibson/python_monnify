@@ -9,15 +9,15 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='python_monnify',
-    version='0.1',
+    version='0.2',
     zip_safe=False,
     include_package_data=True,
     packages=find_packages(),
     license='MIT License',  # example license
-    description='A Library created for ease of using monnify\'s API to create unique account numbers for your users/members',
+    description='A Library created for ease of using monnify\'s API to create unique account numbers for your users/members, verify user transaction, generate Bearer Token etc..',
     long_description_content_type='text/plain',
     long_description=README,
-    url='https://github.com/ldonjibson',
+    url='https://github.com/ldonjibson/python_monnify',
     author='Olayanju A. Ajibola',
     author_email='vtubusinessportal@gmail.com',
     classifiers=[
