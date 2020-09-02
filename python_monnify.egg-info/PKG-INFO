@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: python-monnify
+Version: 0.1
+Summary: A Library created for ease of using monnify's API to create unique account numbers for your users/members
+Home-page: https://github.com/ldonjibson
+Author: Olayanju A. Ajibola
+Author-email: vtubusinessportal@gmail.com
+License: MIT License
+Description: =====
+        Python Monnify
+        =====
+        
+        This library makes it easy to connect with Monnify API (To create reserve accounts)
+        
+        It will be updated and maintained as needed
+        
+        Detailed documentation is in the "docs" directory.
+        
+        Quick start
+        -----------
+        1. pip install requests python_monnify
+        
+        2. To use from monnify import Monnify
+        
+        3. method includes 
+        	> generateToken: Method generate Token to be used in the subsequent calls
+        	> createReserveAccount: Creates reserve accounts and returns value from monnify's API
+        	> createHashFromWebhook: Generate hash as described on monnify's documentation to compare with transactionsHash
+        4. #=========== USAGE ==========
+        	x = Monnify("apiKey", "clientSecretKey")
+        	print(x.generateToken())
+        	print(x.createReserveAccount())
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Description-Content-Type: text/plain
