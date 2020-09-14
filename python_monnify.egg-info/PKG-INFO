@@ -1,8 +1,8 @@
 Metadata-Version: 2.1
 Name: python-monnify
-Version: 0.1
-Summary: A Library created for ease of using monnify's API to create unique account numbers for your users/members
-Home-page: https://github.com/ldonjibson
+Version: 0.3
+Summary: A Library created for ease of using monnify's API to create unique account numbers for your users/members, verify user transaction, generate Bearer Token etc..
+Home-page: https://github.com/ldonjibson/python_monnify
 Author: Olayanju A. Ajibola
 Author-email: vtubusinessportal@gmail.com
 License: MIT License
@@ -24,11 +24,15 @@ Description: =====
         
         3. method includes 
         	> generateToken: Method generate Token to be used in the subsequent calls
+        	
         	> createReserveAccount: Creates reserve accounts and returns value from monnify's API
+        	
         	> createHashFromWebhook: Generate hash as described on monnify's documentation to compare with transactionsHash
         4. #=========== USAGE ==========
         	x = Monnify("apiKey", "clientSecretKey")
+        	
         	print(x.generateToken())
+        	
         	print(x.createReserveAccount())
 Platform: UNKNOWN
 Classifier: Environment :: Web Environment

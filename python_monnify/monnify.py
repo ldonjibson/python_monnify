@@ -14,7 +14,7 @@ class Monnify:
         userAndPass = b64encode(data).decode("ascii")
         headers = { 'Authorization' : 'Basic %s' %  userAndPass }
         #print(headers)
-        url = "https://sandbox.monnify.com/api/v1/auth/login"
+        url = "https://api.monnify.com/api/v1/auth/login"
         r = requests.post(url, headers=headers)
         loadJson = json.loads(r.content)
         #print(loadJson['responseBody']['accessToken'])
@@ -24,7 +24,7 @@ class Monnify:
     """ Create Reserve Account"""
     def createReserveAccount(self, accountReference, accountName, currencyCode, contractCode, customerEmail, customerName):
         rHeaders = {'Content-Type':"application/json", 'Authorization':"Bearer {0}".format(self.generateToken())}
-        reserveAccUrl = "https://sandbox.monnify.com/api/v1/bank-transfer/reserved-accounts"
+        reserveAccUrl = "https://api.monnify.com/api/v1/bank-transfer/reserved-accounts"
         data = {
             "accountReference":accountReference,
             "accountName":accountName,
@@ -49,7 +49,7 @@ class Monnify:
     """GET TRANSACTION DETAILS"""
     def getTranasactionDetails(self,transactionReference):
         rHeaders = {'Content-Type':"application/json", 'Authorization':"Bearer {0}".format(self.generateToken())}
-        url = 'https://sandbox.monnify.com/api/v2/transactions/'+transactionReference
+        url = 'https://api.monnify.com/api/v2/transactions/'+transactionReference
         getTrans = requests.get(url, headers=rHeaders)
         details = json.loads(getTrans.content)
         return details
