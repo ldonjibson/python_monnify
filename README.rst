@@ -1,10 +1,10 @@
+**This package has been moved to https://github.com/ldonjibson/monnify**
+
 =====
 Python Monnify
 =====
 
 This library makes it easy to connect with Monnify API (To create reserve accounts)
-
-It will be updated and maintained as needed
 
 Detailed documentation is in the "docs" directory.
 
